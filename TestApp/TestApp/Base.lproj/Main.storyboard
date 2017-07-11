@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OKu-hN-UK2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="39h-8J-7EL">
+            <objects>
+                <navigationController id="OKu-hN-UK2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XHq-nF-CCI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eEV-xm-Vu6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5m-11-4qp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-663" y="-5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9H-uu-kts">
+                                <rect key="frame" x="119" y="315" width="136" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Rtc-hP-VWC"/>
+                                    <constraint firstAttribute="width" constant="136" id="l2a-6D-rCM"/>
+                                </constraints>
+                                <state key="normal" title="next   "/>
+                                <connections>
+                                    <segue destination="eI0-zj-2gz" kind="push" id="K7x-6b-p1d"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="该响应的text" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOK-v0-Rah">
+                                <rect key="frame" x="136" y="511" width="103" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="SzT-FD-9cC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h9H-uu-kts" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3bu-TG-XtJ"/>
+                            <constraint firstItem="QOK-v0-Rah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TUO-KF-3S9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QOK-v0-Rah" secondAttribute="bottom" constant="126" id="xOw-LB-UaR"/>
+                            <constraint firstItem="h9H-uu-kts" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zXz-cF-nXS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9T0-Wb-4QO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="17"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eIK-eJ-dw2">
+            <objects>
+                <viewController id="eI0-zj-2gz" customClass="GGViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cdg-0I-N9R"/>
+                        <viewControllerLayoutGuide type="bottom" id="HfI-gZ-4mh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e1e-0p-qTr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="不会响应的text" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkq-4l-lIA">
+                                <rect key="frame" x="129" y="554" width="117" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WyW-9a-0wy"/>
+                                    <constraint firstAttribute="width" constant="117" id="lZW-TE-Uat"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kkq-4l-lIA" firstAttribute="centerY" secondItem="e1e-0p-qTr" secondAttribute="centerY" constant="235.5" id="MfN-Co-f9R"/>
+                            <constraint firstItem="kkq-4l-lIA" firstAttribute="centerX" secondItem="e1e-0p-qTr" secondAttribute="centerX" id="o1n-cR-rpt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="78Z-gt-dPJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mlo-kF-vGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="45"/>
+        </scene>
+    </scenes>
+</document>
